@@ -36,11 +36,11 @@ The hero acts as an eye-catcher for your site. So consider to give him a nice ba
 
 This section should show your capabilities and skills. You can change the services under  at `[params.services.list]` in the [`config.toml`](//github.com/digitalcraftsman/hugo-creative-theme/blob/dev/exampleSite/config.toml).
 
-All icons using Fontawesome's icon font. Look at the website of [Fontawesome](//fortawesome.github.io/Font-Awesome/icons/) for more icons. The icons are represented by their corresponding CSS class. A skill is defined like this example:
+All icons using Fontawesome's icon font version 5.3.1. Look at the website of [Fontawesome](//fortawesome.github.io/Font-Awesome/icons/) for more icons. The icons are represented by their corresponding CSS class. Note that the class has two parts, the fa-icon-name and the far (regular), fas (solid), etc. style modifier. A skill is defined like this example:
 
 ```toml
 [[params.services.list]]
-    icon = "fa-diamond"
+    icon = "far fa-gem"
     title = "Sturdy Templates"
     description = "Our templates are updated regularly so they don't break."
 ```
