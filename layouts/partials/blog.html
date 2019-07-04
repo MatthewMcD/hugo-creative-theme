@@ -19,13 +19,13 @@
 						<div class="posts--list__inner">
 							{{ range (first 4 $posts) }}
 							<div class="posts--list__card">
-								<a class="post__read-more-link--overlay" href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a>
-								<div class="posts--list__card__title"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></div>
+								<a class="post__read-more-link--overlay" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+								<div class="posts--list__card__title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></div>
 								<div class="posts--list__card__date">{{ .Date.Format "January 2, 2006" }}</div>
 								{{ if eq .Site.Params.blog.showHomePostExcerpts true }}
 								<div class="posts--list--card__summary">{{ .Summary | truncate 140 }}</div>
 								{{ end }}
-								<a href="{{ .URL }}" title="{{ .Title }}" class="post__read-more-link">Read More &rarr;</a>
+								<a href="{{ .Permalink }}" title="{{ .Title }}" class="post__read-more-link">Read More &rarr;</a>
 							</div>
 							{{ end }}
 						</div>

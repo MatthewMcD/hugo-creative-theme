@@ -1,7 +1,7 @@
 <article class="post--summary">
-	<a href="{{ .URL }}" title="{{ .Title }}" class="post__read-more-link--overlay">Link to Post</a>
+	<a href="{{ .Permalink }}" title="{{ .Title }}" class="post__read-more-link--overlay">Link to Post</a>
 	<div class="post__meta">
-		<h2 class="post__meta__title"><a href="{{ .URL }}" title="{{ .Title }}" class="post__read-more-link">{{ .Title }}</a></h2>
+		<h2 class="post__meta__title"><a href="{{ .Permalink }}" title="{{ .Title }}" class="post__read-more-link">{{ .Title }}</a></h2>
 		{{ if or .Date .Author }}
 		<p class="post__meta__byline">
 			{{ if .Params.author }}By {{ .Params.author }} on {{ end }}
@@ -10,6 +10,6 @@
 		{{ end }}
 	</div>
 	<div class="post__content">
-		<p>{{ .Summary }} <a href="{{ .URL }}" title="{{ .Title }}" class="post__read-more-link">Read More &rarr;</a></p>
+		<p>{{ .Summary }} <a href="{{ .Permalink }}" title="{{ .Title }}" class="post__read-more-link">Read More &rarr;</a></p>
 	</div>
 </article>
